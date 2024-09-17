@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	_ "fmt"
 )
 
 func main() {
-	fmt.Println("Hello World")
+	for i := 0; i < 20; i++ {
+		fmt.Println("Hello World")
+	}
 }
