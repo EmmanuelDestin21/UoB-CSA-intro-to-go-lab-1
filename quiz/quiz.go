@@ -54,5 +54,13 @@ func ask(s score, question question) score {
 }
 
 func main() {
+	var qs []question = questions()
+	s := score(0)
+
+	for _, q := range qs {
+		s = ask(s, q)
+	}
+
+	fmt.Printf("You scored %d out of %d.\n", s, len(qs))
 	// TODO: Write a quiz program
 }
